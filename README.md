@@ -1,1 +1,22 @@
-# WebDevWithDotNet
+# Web Development With .Net
+
+ ww -Earlu 1990's 
+ ASP - MS, JSP - SUN
+ .NET Framework - Early 2000's - Windows only, last version 4.8
+ ASP.NET (Web Forms)
+ MVC - Model View Controller - 2007
+ ASP.NET MVC - 2008
+
+
+ 2015/16 - .NET core (cross platform, opensource)
+ ASP.NET Core
+
+ ## SDLC
+ ### Environments (Physical Server and APP urls)
+ CollegeMonitor - https://CollegeMOnitor.com
+
+ 1. Developer - Local : Day Environment
+ 1. QA - Code Changes Deployed, Tst Environment (https://tst.CollegeMOnitor.com)
+ 1. INT - All code changes Integration Environment (https://int.CollegeMOnitor.com)
+ 1. UAT - PO/TPO/BA, User Acceptance Testing (https://uat.CollegeMOnitor.com)
+ 1. PROD - Production Environment (https://CollegeMOnitor.com)
