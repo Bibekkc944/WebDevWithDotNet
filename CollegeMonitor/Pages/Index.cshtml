@@ -13,5 +13,26 @@
 </div>
 }
 
-@* 1. print numbers from 1 to 1000
-2. print multiplication table for 45 *@
+@* 1. print numbers from 1 to 1000*@
+
+@for (int i = 1; i <= 1000; i++)
+{
+    @i if (i < 1000)
+    {
+        @Html.Raw(", ")
+    }
+}
+
+
+@* 2. print multiplication table for 45  *@
+
+
+<br> <h5>The multiplication table of 45 is below</h5>
+@{
+    int num = 45; 
+    for (int i = 1; i <= 10; i++)
+    {
+        <p>@num * @i = @(num * i)</p>
+    }
+    
+}
