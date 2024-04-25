@@ -27,12 +27,15 @@
 @* 2. print multiplication table for 45  *@
 
 
-<br> <h5>The multiplication table of 45 is below</h5>
-@{
-    int num = 45; 
-    for (int i = 1; i <= 10; i++)
+
+<table border="1">
+    <tr>
+        <th><b>Multiplication table of 45</b></th>
+    </tr>
+    @for (int i = 1; i <= 10; i++)
     {
-        <p>@num * @i = @(num * i)</p>
+        <tr>
+            <td style="text-align: center;">45*@i = @(45*i)</td>
+        </tr>
     }
-    
-}
+</table>
