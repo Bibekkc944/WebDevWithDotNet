@@ -20,3 +20,13 @@
  1. INT - All code changes Integration Environment (https://int.CollegeMOnitor.com)
  1. UAT - PO/TPO/BA, User Acceptance Testing (https://uat.CollegeMOnitor.com)
  1. PROD - Production Environment (https://CollegeMOnitor.com)
+
+ # CollegeMonitor Requirements
+ 
+ ## Entities/Tables/Models
+ 1. Class - Id, Title, start, Duration
+ 1. Course - Id, Name, TextBook, CreditHrs
+ 1. Student - Id, Name, Address, Email, Program, Semester
+
+ Course has multiple classes (one to many)
+ Student may enroll on mujltiple courses and a course can be studied by multiple students(many to many)
