@@ -30,3 +30,9 @@
 
  Course has multiple classes (one to many)
  Student may enroll on mujltiple courses and a course can be studied by multiple students(many to many)
+
+
+ ## Classwork
+ 1. On courses page, number should be 1,2,3,4...N
+ 1. For each Course, there should be edit and delete button
+ 1. When edit is clicked, course
