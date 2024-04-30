@@ -35,4 +35,4 @@
  ## Classwork
  1. On courses page, number should be 1,2,3,4...N
  1. For each Course, there should be edit and delete button
- 1. When edit is clicked, course
+ 1. When edit is clicked, course edit page should be displayed with course data prepopulated
