@@ -1,4 +1,4 @@
-@page
+@page "/sessions"
 @model CollegeMonitor.Pages_Sessions.IndexModel
 
 
@@ -13,6 +13,9 @@
                 @Html.DisplayNameFor(model => model.Session[0].Title)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Session[0].Course)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Session[0].Details)
             </th>
             <th>
@@ -25,27 +28,34 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Session) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Details)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Start)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DurationInHours)
-            </td>
-            <td>
-                <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@item.Id"> <i class="bi bi-pencil"></i></a> |
-                <a class="btn btn-primary" asp-page="./Details" asp-route-id="@item.Id"><i class="bi bi-clipboard"></i></a> |
-                <a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.Id"><i class="bi bi-archive"></i></a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Session)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @(item.Course?.Name ?? "N/A")
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Details)
+                </td>
+
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Start)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DurationInHours)
+                </td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@item.Id"> <i class="bi bi-pencil"></i></a> |
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@item.Id"><i
+                            class="bi bi-clipboard"></i></a> |
+                    <a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.Id"><i class="bi bi-archive"></i></a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
-

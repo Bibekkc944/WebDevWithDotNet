@@ -8,13 +8,13 @@ public class Session
     public string Title { get; set; } = "";
     public string? Details { get; set; }   //string? = nullable
     public DateTime Start { get; set; }
-     public float DurationInHours { get; set; }
+    public float DurationInHours { get; set; }
 
 
 
-public int? CourseId { get; set; }   //foreign key always made in mini side or secondary table
-                                     // int? can be nullable
-     public Course Course {get; set;}
+    public int? CourseId { get; set; }   //foreign key always made in mini side or secondary table
+                                         // int? can be nullable to create foreign key should be classname+primary key of primary table
+    public Course? Course { get; set; }    // it should be null
 }
 
 //Course has multiple Sessions
